@@ -1,0 +1,35 @@
+{
+  "name": "@folio/bugsnag-logger",
+  "version": "1.0.0",
+  "description": "Bugsnag Logger Stripes",
+  "repository": "zburke/ui-bugsnag-logger",
+  "publishConfig": {
+    "registry": "https://repository.folio.org/repository/npm-folio/"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "main": "src/index.js",
+  "stripes": {
+    "actsAs": [
+      "handler"
+    ],
+    "handlerName": "eventHandler",
+    "route": "/"
+  },
+  "devDependencies": {
+    "@folio/stripes": "^6.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@bugsnag/js": "^7.3.3",
+    "@bugsnag/plugin-react": "^7.3.3"
+  },
+  "peerDependencies": {
+    "@folio/stripes": "^6.0.0",
+    "react": "*",
+    "react-dom": "*"
+  }
+}
